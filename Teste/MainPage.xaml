@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Teste.MainPage">
+
+    <Grid x:Name="grdPrinc">
+        <Frame
+        x:Name="MainFrame"
+        Style="{DynamicResource frameTab}">
+        </Frame>
+
+        <Grid 
+        WidthRequest="350"
+        HeightRequest="60"
+        Margin="20"
+        Padding="10"
+        HorizontalOptions="Center"
+        VerticalOptions="End" BackgroundColor="Transparent">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button 
+            Text="" 
+            Style="{DynamicResource btnTab}"
+            Grid.Column="0"
+            Clicked="OnButtonClicked"/>
+
+            <Button 
+            Text="" 
+            Style="{DynamicResource btnTab}"
+            Grid.Column="1"
+            Clicked="OnButtonClicked"/>
+
+            <Button 
+            Text="" 
+            Style="{DynamicResource btnTab}"
+            Grid.Column="2"
+            Clicked="OnButtonClicked"/>
+
+            <Button 
+            Text="" 
+            Style="{DynamicResource btnTab}"
+            Grid.Column="3"
+            Clicked="OnButtonClicked"/>
+        </Grid>
+    </Grid>
+
+</ContentPage>
